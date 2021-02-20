@@ -18,9 +18,11 @@
 
 ## Formula
 
+```
 for(i=0;i<length;i+){
   generatedPassword += finalString.charAt(Math.floor(Math.random()*finalString.length));
 }
+```
 
 ### Made in pure vanilla script
 
