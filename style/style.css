@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #bdc3c7;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Main {
+  width: 700px;
+  margin: auto;
+  margin-top: 30px;
+  max-width: 700px;
+  border-radius: 10px;
+  background-color: #d35400;
+  color: white;
+  padding: 50px;
+}
+
+.Main h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Main h1 img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.Main .mainInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.Main .mainInput input[type=text] {
+  width: 80%;
+  padding: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  border: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.Main .mainInput .copy {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px;
+  width: 20%;
+  border: 1px solid white;
+  border-left: 1px solid black;
+  background-color: white;
+  color: #e74c3c;
+  margin-bottom: 10px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4 linear;
+  transition: all 0.4 linear;
+}
+
+.Main .mainInput .copy:hover {
+  background-color: #d35400;
+  color: white;
+}
+
+.Main .mainInput .copy:active {
+  opacity: 0;
+}
+
+#error {
+  color: white;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+button.generate {
+  padding: 10px 30px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+  color: #e74c3c;
+  margin-bottom: 10px;
+  font-weight: bold;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+button.generate:hover {
+  background-color: #d35400;
+  color: white;
+  border: 1px solid white;
+}
+
+button.generate:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.passwordLength {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.passwordLength select {
+  padding: 10px;
+  outline: none;
+  width: 10%;
+  border-radius: 10px;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*# sourceMappingURL=style.css.map */

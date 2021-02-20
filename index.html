@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cloud.png">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="Main">
+
+        <h1 style="text-align: center;">
+            <img src="cloud.png" /> <span>PASSWORD GENERATOR</span>
+        </h1>
+        <div class="passwordLength">
+            <select id="length"> 
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="16">16</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+                <option value="30">30</option>
+                <option value="48">48</option>
+                <option value="60">60</option>
+                <option value="80">80</option>
+                <option value="100">100</option>
+                <option value="128">128</option>
+                <option value="256">256</option>
+                <option value="512">512</option>
+            </select>
+            <div>&nbsp;Password Length</div>
+        </div>
+    
+        <label class="container" > 
+            `~!@#$%^&*()-=_+,./?'";:
+            <input type="checkbox" id="symbol">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" > abcdef... 
+            <input type="checkbox" id="lowercase">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" > ABCDEF...
+            <input type="checkbox" id="uppercase">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" > 0-9
+            <input type="checkbox" id="number">
+            <span class="checkmark"></span>
+        </label>
+        <button class="generate" onclick="generate()">GENERATE</button>
+        <div class="mainInput">
+            <input type="text" id="generatedPassword" placeholder="Generated password" />
+            <button class="copy" id="copy" onclick="copy()">copy</button>
+        </div>
+        <label id="error"></label>
+
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
