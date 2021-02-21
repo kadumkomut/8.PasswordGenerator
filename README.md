@@ -25,4 +25,5 @@ for(i=0;i<length;i+){
 ```
 
 ### Made in pure vanilla script
+### A SIMPLE PASSWORD GENERATOR
 
